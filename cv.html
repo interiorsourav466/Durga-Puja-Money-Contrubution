@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durga Puja Budget App</title>
+    <link rel="stylesheet" href="Durga_puja.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Durga Puja Budget Tracker</h1>
+
+        <!-- Form for accepting contribution -->
+        <form id="contributionForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="amount">Contribution Amount (₹):</label>
+            <input type="number" id="amount" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Budget Section -->
+        <h3>Total Budget: ₹<span id="budget">100000</span></h3>
+
+        <!-- Display contributions -->
+        <h3>Contributors List:</h3>
+        <ul id="contributionList"></ul>
+
+        <!-- Display the total collected amount -->
+        <h3>Total Collected: ₹<span id="totalCollected">0</span></h3>
+
+        <!-- Budget comparison result -->
+        <h3 id="resultMessage"></h3>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
